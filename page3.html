@@ -22,9 +22,16 @@
 <body>
 
 <!-- MUSIC -->
-<audio id="music" autoplay>
+  <audio id="music">
   <source src="song.mp3" type="audio/mpeg">
 </audio>
+
+<script>
+  document.body.addEventListener("click", function() {
+    document.getElementById("music").play();
+  });
+</script>
+
 
 <h1>
   Will you be my boyfriend<br>
